@@ -10,19 +10,34 @@
 		margin: 0;
 		border: 10px solid #192b36;
 	}
-
 	img
 	{
 		max-width: 100%;
 		vertical-align: top;
+		
+	}
+
+	img#responsive
+	{
+		display: none;
+	}
+
+	@media screen and (max-width: 768px)
+	{
+		img#responsive
+		{
+			display: block;
+		}
+
 	}
 		
 	</style>	
+	}
 </head>
 <body>
-	<img src="img/header.jpg" alt="">
-	<img src="img/hero.jpg" alt="">
+	<img src="img/invie-responsive.png" id="responsive">
+	<img src="img/header.jpg">
+	<img src="img/hero.jpg">
 	<img src="img/acustica.jpg">
-	<img src="img/clasica.jpg">
 </body>
 </html>
